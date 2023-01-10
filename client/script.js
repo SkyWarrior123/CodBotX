@@ -64,6 +64,8 @@ const handleSubmit = async (e) => {
 
   const data = new FormData(form)
 
+  console.log(chatContainer)
+
   // user's chatstripe
   chatContainer.innerHTML += chatStripe(false, data.get('prompt'))
 
